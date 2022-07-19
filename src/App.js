@@ -1,5 +1,6 @@
 // Custom hook for fetching real-time data
 import { useCollection } from './hooks/useCollection'
+import { useLogout } from './hooks/useLogout'
 
 // for deleting an document
 import { db } from './Firebase/config'
@@ -12,6 +13,8 @@ import Signup from './components/Signup'
 function App() {
   // fetch
   const { documents: sodas } = useCollection('sodas')
+
+  const { logout } = useLogout()
   
   console.log(sodas)
 
@@ -35,6 +38,7 @@ function App() {
       </ul>
       <Form />
       <Signup />
+      <li onClick={logout}>Logout</li>
     </div>
   );
 }
