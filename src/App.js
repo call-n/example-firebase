@@ -7,6 +7,7 @@ import { doc, deleteDoc } from 'firebase/firestore'
 
 // Form for creating a new document
 import Form from './components/Form'
+import Signup from './components/Signup'
 
 function App() {
   // fetch
@@ -33,6 +34,7 @@ function App() {
         )}
       </ul>
       <Form />
+      <Signup />
     </div>
   );
 }
