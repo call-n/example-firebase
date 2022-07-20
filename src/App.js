@@ -9,6 +9,7 @@ import { doc, deleteDoc } from 'firebase/firestore'
 // Form for creating a new document
 import Form from './components/Form'
 import Signup from './components/Signup'
+import Login from './components/Login'
 
 function App() {
   // fetch
@@ -38,7 +39,8 @@ function App() {
       </ul>
       <Form />
       <Signup />
-      <li onClick={logout}>Logout</li>
+      <li onClick={logout}>lll Logout lll</li>
+      <Login />
     </div>
   );
 }
